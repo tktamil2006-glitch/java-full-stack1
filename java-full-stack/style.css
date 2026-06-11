@@ -1,0 +1,13 @@
+body{
+    background-color:grey;
+}
+img{
+   
+   transition: transform 10s linear 3s;
+}
+img:hover{
+    border-style: groove;
+    border-width: 1cm;
+    background-color: blueviolet;
+    transform: rotate(45deg);
+}
