@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id = "del">Star</h1>
+    <p id="p1">Tamilselvi</p>
+    <ul id="list">
+        <li id="S">sinchan</li>
+        <li id="one">one piece</li>
+        <li id="DN">deathNote</li>
+
+
+    </ul>
+    <script>
+        let p =document.createElement("p")
+        p.innerText="Arjun Das";
+        console.log(p);
+        document.body.append(p);
+        document.getElementById("del").remove()
+        let rename=document.createElement("p")
+        rename.innerText="kutty";
+        let name = document.getElementById("p1");
+        document.getElementById("body").replaceChild(rename,name);
+        let Naruto = document.createElement("li");
+        Naruto.innerText="Naruto";
+        let one_piece = document.getElementById("one");
+        document.getElementById("list").insertBefore(Naruto,one_piece);
+        let bleach = document.createElement("li");
+        bleach.innerText="Bleach";
+        document.getElementById("one").after(bleach);
+        let Spy=document.createElement("li");
+        Spy.innerText="Spy Family";
+        document.getElementById("DN").before(Spy);
+    </script>
+    
+</body>
+</html>
